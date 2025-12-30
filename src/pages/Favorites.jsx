@@ -12,7 +12,7 @@ export default function Favorites() {
   const loadFavorites = async () => {
     console.log("📥 Loading favorites...");
     try {
-      const res = await axios.get("http://localhost:4001/favorites");
+      const res = await axios.get("http://localhost:4000/favorites");
       console.log("✅ Loaded from server:", res.data);
       setFavorites(res.data);
       localStorage.setItem("appFavorites", JSON.stringify(res.data));

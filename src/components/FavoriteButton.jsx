@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:4001/favorites";
+const API_URL = "http://localhost:4000/favorites";
 
 export default function FavoriteButton({ movie }) {
   const [isFavorite, setIsFavorite] = useState(false);
